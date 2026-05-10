@@ -9,8 +9,8 @@ class ResearchPaper(BaseModel):
     title: str
     pmid: int
     source: Source
-    tags: List[str] = []
-    summary: Optional[str] = None
+    tags: List[str] = [] #if no tags, run anyways and leave field empty
+    summary: Optional[str] = None #if no summary, run anyways and leave field empty
 
 #test data
 data = {
